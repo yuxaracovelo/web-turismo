@@ -11,7 +11,7 @@ const hotels = [
   //   price: "Desde €",
   //   description: "",
   //   // Para la tarjeta
-  //   image: "../assets/placeholder-cuadrada.png",
+  //   image: "../../assets/placeholder-cuadrada.png",
   //   // Para la hero section
   //   heroImage: "../assets/imagen-ejemplo4.jpg",
   //   tags: ["", "", ""],
@@ -25,8 +25,8 @@ const hotels = [
   //   ],
   //   // Para la galeria de fotos
   //   fotos: [
-  //     { url: "../assets/placeholder-rectangular.png", texto: "" },
-  //     { url: "../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
+  //     { url: "../../assets/placeholder-rectangular.png", texto: "" },
+  //     { url: "../../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
   //   ],
   //   // Side Panel
   //   infoAdicional: [
@@ -45,7 +45,7 @@ const hotels = [
     price: "Desde 127€",
     description: "Hotel Santiago Plaza Affiliated by Meliá es un establecimiento de 4 estrellas situado en una zona estratégica de Santiago de Compostela, diseñado para ofrecer una conectividad impecable tanto con el centro histórico (a 1 km) como con las principales vías de transporte. Su infraestructura técnica combina un diseño contemporáneo y funcional, posicionándose como un nodo logístico ideal para el viajero de negocios y el turismo cultural en Galicia. ",
     // Para la tarjeta
-    image: "../assets/placeholder-cuadrada.png",
+    image: "../../assets/placeholder-cuadrada.png",
     // Para la hero section
     heroImage: "../assets/imagen-ejemplo4.jpg",
     tags: ["Gastronómico", "Urbano", "Familiar"],
@@ -64,10 +64,10 @@ const hotels = [
     ],
     // Para la galeria de fotos
     fotos: [
-      { url: "../assets/placeholder-rectangular.png", texto: "" },
-      { url: "../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
-      { url: "../assets/placeholder-rectangular.png", texto: "Pie de página opcional" },
-      { url: "../assets/imagen-ejemplo4.jpg", texto: "" }
+      { url: "../../assets/placeholder-rectangular.png", texto: "" },
+      { url: "../../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
+      { url: "../../assets/placeholder-rectangular.png", texto: "Pie de página opcional" },
+      { url: "../../assets/imagen-ejemplo4.jpg", texto: "" }
     ],
     // Side Panel
     infoAdicional: [
@@ -98,7 +98,7 @@ const hotels = [
     price: "Desde 50€",
     description: "Casa Bouza, situada estratégicamente en Becerrea, es un establecimiento de turismo rural que se posiciona como el refugio ideal en la Comarca de los Ancares. Su infraestructura técnica combina la robustez de la arquitectura tradicional gallega con una dotación de servicios completa, diseñada para garantizar una operatividad versátil tanto para estancias de descanso como para el turismo activo en plena montaña lucense.",
     // Para la tarjeta
-    image: "../assets/imagen-ejemplo2.jpg",
+    image: "../../assets/imagen-ejemplo2.jpg",
     // Para la hero section
     heroImage: "../assets/imagen-ejemplo2.jpg",
     tags: ["Montaña", "Tradicional", "Familiar"],
@@ -113,10 +113,10 @@ const hotels = [
     ],
     // Para la galeria de fotos
     fotos: [
-      { url: "../assets/imagen-ejemplo3.jpg", texto: "" },
-      { url: "../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
-      { url: "../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
-      { url: "../assets/imagen-ejemplo4.jpg", texto: "" }
+      { url: "../../assets/imagen-ejemplo3.jpg", texto: "" },
+      { url: "../../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
+      { url: "../../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
+      { url: "../../assets/imagen-ejemplo4.jpg", texto: "" }
     ],
     // Side Panel
     infoAdicional: [
@@ -147,7 +147,7 @@ const hotels = [
     price: "Desde 127€",
     description: "Hotel la Suite, ubicado en una zona estratégica de Vigo, es un establecimiento que destaca por su enfoque en la modernidad y la funcionalidad operativa. Su infraestructura técnica está diseñada para ofrecer una estancia práctica y confortable. posicionándose como una opción de alojamiento eficiente para quienes visitan la ciudad olívica tanto por motivos de ocio como profesionales. ",
     // Para la tarjeta
-    image: "../assets/placeholder-cuadrada.png",
+    image: "../../assets/placeholder-cuadrada.png",
     // Para la hero section
     heroImage: "../assets/imagen-ejemplo4.jpg",
     tags: ["Urbano", "Relajante", "Romántico"],
@@ -168,8 +168,8 @@ const hotels = [
     ],
     // Para la galeria de fotos
     fotos: [
-      { url: "../assets/placeholder-rectangular.png", texto: "" },
-      { url: "../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
+      { url: "../../assets/placeholder-rectangular.png", texto: "" },
+      { url: "../../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
     ],
     // Side Panel
     infoAdicional: [
@@ -204,7 +204,7 @@ const hotels = [
     price: "Desde 00€",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     // Para la tarjeta
-    image: "../assets/placeholder-cuadrada.png",
+    image: "../../assets/placeholder-cuadrada.png",
     // Para la hero section
     heroImage: "../assets/imagen-ejemplo4.jpg",
     tags: ["Urbano", "Relajante", "Romántico"],
@@ -225,8 +225,8 @@ const hotels = [
     ],
     // Para la galeria de fotos
     fotos: [
-      { url: "../assets/placeholder-rectangular.png", texto: "" },
-      { url: "../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
+      { url: "../../assets/placeholder-rectangular.png", texto: "" },
+      { url: "../../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
     ],
     // Side Panel
     infoAdicional: [
