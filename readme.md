@@ -1,48 +1,12 @@
-# **_GALICIA ESCAPADAS_**
+# **_WEB DE TURISMO_**
 
-Propuesta de rediseño de la web https://www.galiciaescapadas.com/ con el objetivo de mejorar la usabilidad y actualizar el funcionamiento.
+Propuesta de página de búsqueda de alojamientos y experiencias/actividades turísticas. 
 
-Hecho por Yuxara Covelo Cameselle durante sus prácticas en esta empresa (10/04/26 - 15/05/26)
+Resultado del proyecto de rediseño de la web https://www.galiciaescapadas.com/ con el objetivo de mejorar la usabilidad y actualizar el funcionamiento, realizado durante las prácticas en la empresa Agrupación Galicia (Vigo, 2026).
 
-## TO DO:
+Autor: Yuxara Covelo Cameselle
 
-- [] Completar informacion de las Recomendaciones por zona (crear zonas, asignar las correspondientes y links al articulo/blog en el que se menciona cada recomendacion)
-- [] Creación del resto de páginas secundarias:
-  - [] Recomendaciones (general + articulos)
-  - [] Contacto (formulario contacto + FAQ page)
-- [] Añadir slides a index.html - hero section
-- [] Añadir enlaces correspondientes a los diferentes elementos del Index
-- [] Side menus en resultados de busqueda de alojamientos/actividades/experiencias
-- [] Crear variante de tarjeta con sello de calidad
-- [] Rediseño de logotipo y breve manual corporativo
-- [] Rediseño del sello de calidad
-
-## DONE:
-
-- [x] Diseño visual de la página en Figma: (https://www.figma.com/design/1Dhkpd90lxydFRzx9bowQG/Geodestinos?node-id=0-1&p=f&t=wWy8dFlXEdrI132t-0)
-- [x] Header, nav y footer común
-- [x] Estructura de carpetas y documentos.
-- [x] Creación de hojas de estilo generales
-- [x] Creación de index.html
-- [x] index.html responsive
-- [x] Archivos css pars interacciones y secciones
-- [x] Archivo datos.js para usar como base de datos de cada elemento
-- [x] Creación de alojamientos.html
-- [x] Programación del funcionamiento del calendario/formulario de búsqueda
-- [x] Crear galería interactiva y "automática"
-- [x] Crear plantilla de alojamientos específicos (hero con nombre, seccion info basica, galeria, servicios, localizacion y recomendaciones en la zona)
-- [x] Arreglar funcionamiento de la imagen de fondo en hero-section, ahora mismo puesta a través de css y no personalizable. (Objetivo: Incluirla como atributo para que se personalice automaticamente)
-- [x] Añadir side panel para "ver detalles"
-- [x] Crear recomendaciones por zonas
-- [x] Title dinámico con el nombre del hotel
-- [x] Creación pagina actividades (dupe de alojamientos.html + actividades especificas)
-- [x] Creación pagina experiencias (dupe de alojamientos.html + experiencia especificas )
-- [x] Introducir información elementos (alojamientos, actividades, experiencias, recomendaciones por zona...)
-- [x] Crea tu propia experiencia (pagina de búsqueda + resultados + experiencia especififca personalizada)
-- [x] Revisión del correcto funcionamientos de links
-- [x] Revisión del correcto funcionamientos de versiones responsive
-
-## INDICE ************\*\*************\*\*\*************\*\*************
+## INDICE ************
 
 1. Estructura básica
 2. Funcionamiento del buscador
@@ -51,8 +15,7 @@ Hecho por Yuxara Covelo Cameselle durante sus prácticas en esta empresa (10/04/
 4. Alojamientos, Actividades y Experiencias
 5. ¿Cómo añadir nuevos elementos?
 6. ¿Cómo funcionan las experiencias personalizadas?
-    6.1. Recomendaciones por zona
-## ************\*\*************\*\*\*************\*\*************
+
 
 ## 1. Estructura básica:
 
@@ -136,7 +99,7 @@ Las imágenes de las hero section funcionan de 2 maneras diferentes:
 
 a) En páginas secundarias (alojamientos, actividades, experiencias, recomendaciones y contacto) a cada hero-section se le asigna su id correspondiente /id="hero-section-index"/ y en css se introduce la imagen /#hero-section-index{background-image: url("imagen-ejemplo1.jpg");
 }/. Para que funcione correctamente, asegúrate de que el estilo de #hero-section también se le asigne a la específica de esa pagina secundaria.
-b) Para elementos especificos, la imagen se introduce en datos.js en el atributo heroImage.
+b) Para elementos especificos, la imagen se introduce en el js correspondiente en el atributo heroImage.
 
 ## 4. Alojamientos, Actividades y Experiencias
 
