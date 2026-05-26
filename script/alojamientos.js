@@ -11,9 +11,9 @@ const hotels = [
   //   price: "Desde €",
   //   description: "",
   //   // Para la tarjeta
-  //   image: "../../assets/placeholder-cuadrada.png",
+  //   image: "../assets/placeholder-cuadrada.png",
   //   // Para la hero section
-  //   heroImage: "../../assets/imagen-ejemplo4.jpg",
+  //   heroImage: "../assets/imagen-ejemplo4.jpg",
   //   tags: ["", "", ""],
   //   link: "alojamientos/plantilla-alojamiento.html",
   //   //Mapa de Google Maps
@@ -25,8 +25,8 @@ const hotels = [
   //   ],
   //   // Para la galeria de fotos
   //   fotos: [
-  //     { url: "../../assets/placeholder-rectangular.png", texto: "" },
-  //     { url: "../../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
+  //     { url: "../assets/placeholder-rectangular.png", texto: "" },
+  //     { url: "../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
   //   ],
   //   // Side Panel
   //   infoAdicional: [
@@ -45,9 +45,9 @@ const hotels = [
     price: "Desde 127€",
     description: "Hotel Santiago Plaza Affiliated by Meliá es un establecimiento de 4 estrellas situado en una zona estratégica de Santiago de Compostela, diseñado para ofrecer una conectividad impecable tanto con el centro histórico (a 1 km) como con las principales vías de transporte. Su infraestructura técnica combina un diseño contemporáneo y funcional, posicionándose como un nodo logístico ideal para el viajero de negocios y el turismo cultural en Galicia. ",
     // Para la tarjeta
-    image: "../../assets/placeholder-cuadrada.png",
+    image: "../assets/placeholder-cuadrada.png",
     // Para la hero section
-    heroImage: "../../assets/imagen-ejemplo4.jpg",
+    heroImage: "../assets/imagen-ejemplo4.jpg",
     tags: ["Gastronómico", "Urbano", "Familiar"],
     link: "alojamientos/plantilla-alojamiento.html",
     // Mapa de Google Maps
@@ -64,10 +64,10 @@ const hotels = [
     ],
     // Para la galeria de fotos
     fotos: [
-      { url: "../../assets/placeholder-rectangular.png", texto: "" },
-      { url: "../../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
-      { url: "../../assets/placeholder-rectangular.png", texto: "Pie de página opcional" },
-      { url: "../../assets/imagen-ejemplo4.jpg", texto: "" }
+      { url: "../assets/placeholder-rectangular.png", texto: "" },
+      { url: "../assets/imagen-ejemplo3.jpg", texto: "Pie de página opcional" },
+      { url: "../assets/placeholder-rectangular.png", texto: "Pie de página opcional" },
+      { url: "../assets/imagen-ejemplo4.jpg", texto: "" }
     ],
     // Side Panel
     infoAdicional: [
