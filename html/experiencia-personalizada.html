@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/interaccion.css" />
+    <link rel="stylesheet" href="../styles/secciones.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/placeholder-favicon.png"
+    />
+    <title>Experiencias Personalizadas - Galicia Escapadas</title>
+  </head>
+  <body>
+    <!-- En páginas secundarias incluye Inicio -->
+    <header class="header">
+      <div class="header-content">
+        <a  href="../index.html">
+          <img src="../assets/placeholder-logo.png" alt="Logo Galicia Escapadas"/>
+        </a>
+        <button class="menu-toggle" aria-label="Menu">
+          <div class="material-symbols-outlined" id="burger-menu">menu</div>
+        </button>
+
+        <nav id="main-nav" >
+          <a  href="../index.html">Inicio</a>
+          <a  href="alojamientos.html">Alojamientos</a>
+          <a  href="actividades.html">Actividades</a>
+          <a  href="experiencias.html">Experiencias</a>
+          <a  href="recomendaciones.html">Recomendaciones</a>
+          <a  href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <div id="volver" class="volver">
+      <div class="material-symbols-outlined"> arrow_back </div>
+      <a  href="experiencias.html">Volver</a>
+    </div>
+    <!-- HERO SECTION -->
+    <section id="hero-section-experiencia-personalizada" >
+      <div class="hero-texto">
+        <h1 >Personaliza tu experiencia</h1>
+
+        <!-- INICIO FORMULARIO -->
+        <div class="form-alojamientos-no-calendar">
+          <form id="reservation-form">
+            
+            <div class="form-group">
+              <label><h3>Provincia</h3></label>
+              <select id="province">
+                <option value="">¿A dónde quieres ir?</option>
+                <option value="A Coruña">A Coruña</option>
+                <option value="Lugo">Lugo</option>
+                <option value="Ourense">Ourense</option>
+                <option value="Pontevedra">Pontevedra</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label><h3>Experiencia</h3></label>
+              <select id="trip-type">
+                <option value="">¿Qué te apetece?</option>
+                <option value="Relajación">Relajación</option>
+                <option value="Gastronómico">Gastronómico</option>
+                <option value="Romántico">Romántico</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Familiar">Familiar</option>
+                <option value="Playa">Playa</option>
+                <option value="Montaña">Montaña</option>
+                <option value="Urbano">Urbano</option>
+                <option value="Tradicional">Tradicional</option>
+              </select>
+            </div>
+
+            <div class="botones-formulario-no-calendar">
+              <button class="boton-primario" type="submit" id="submit-booking">
+                Ver Experiencias Personalizables
+              </button>
+              <button class="boton-secundario" type="reset">
+                Borrar filtros
+              </button>
+            </div>
+
+          </form>
+        </div>
+        <!-- FIN FORMULARIO -->
+        </section>
+    <div id="results-container" class="results-grid"></div>
+    <hr>
+    <article class="article">
+      <h2 >¿Cómo funciona?</h2>
+      <h5 class="subtitulo">Ahorra en tus vacaciones contratando a través de nuestra plataforma.</h5>
+      <div id="como-funciona">
+        <div class="tarjeta">
+          
+          <div class="texto-tarjeta">
+            <div class="material-symbols-outlined">home</div>
+            <h5 >Reserva tu alojamiento</h5>
+            <p >Elige entre nuestros alojamientos  y haz tu reserva.</p>
+          </div>
+        </div>
+        <div class="tarjeta">
+          
+          <div class="texto-tarjeta">
+            <div class="material-symbols-outlined">star</div>
+            <h5 >Elige la experiencia</h5>
+            <p >Escoge entre las múltiples experiencias compatibles con tu alojamiento.</p>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <div class="texto-tarjeta">
+            <div class="material-symbols-outlined">percent</div>
+            <h5 >Disfruta del descuento</h5>
+            <p >Contrata tu experiencia y usa tu número de reserva de alojamiento para activar descuentos exclusivos.</p>
+          </div>
+        </div>
+    </article>
+    
+    
+    <footer >
+      <div class="footer-content">
+        <nav>
+          <a  href="../index.html">Inicio</a>
+          <a  href="alojamientos.html">Alojamientos</a>
+          <a  href="actividades.html">Actividades</a>
+          <a  href="experiencias.html">Experiencias</a>
+          <a  href="recomendaciones.html">Recomendaciones</a>
+          <a  href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="../script/alojamientos.js"></script>
+    <script src="../script/actividades.js"></script>
+    <script src="../script/experiencias.js"></script>
+    <script src="../script/packsPersonalizados.js"></script>
+    
+    <script src="../main.js"></script>
+
+  </body>
+</html>

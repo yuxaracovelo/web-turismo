@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../styles/interaccion.css" />
+    <link rel="stylesheet" href="../../styles/secciones.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/placeholder-favicon.png"
+    />
+    <title>Plantilla Experiencias</title>
+  </head>
+  <body class="body">
+    <div id="top"></div>
+    <header class="header">
+      <!-- En páginas secundarias incluye Inicio -->
+      <div class="header-content">
+        <a href="../../index.html">
+          <img
+            src="../../assets//placeholder-logo.png"
+            alt="Logo Galicia Escapadas"
+          />
+        </a>
+
+        <button class="menu-toggle" aria-label="Menu">
+          <div class="material-symbols-outlined" id="burger-menu">menu</div>
+        </button>
+
+        <nav id="main-nav">
+          <a href="../../index.html">Inicio</a>
+          <a href="../alojamientos.html">Alojamientos</a>
+          <a href="../actividades.html">Actividades</a>
+          <a href="../experiencias.html">Experiencias</a>
+          <a href="../recomendaciones.html">Recomendaciones</a>
+          <a href="../contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <div id="volver" class="volver">
+      <div class="material-symbols-outlined">arrow_back</div>
+      <a href="../experiencia-personalizada.html"
+        >Volver</a
+      >
+    </div>
+    <!-- HERO SECTION-->
+    <section id="hero-section-experiencias">
+      <div class="hero-texto">
+        <h1 id="pack-titulo">Nombre del Pack</h1>
+        <h4 id="pack-intro" class="subtitulo">
+          Descripción del pack completo.
+        </h4>
+      </div>
+    </section>
+
+    <article>
+      <div class="seleccion-rapida">
+        <h3>Opciones de Alojamiento</h3>
+        <div id="grid-alojamientos-small" class="results-grid"></div>
+
+        <h3>Experiencias Incluidas</h3>
+        <div id="grid-experiencias-small" class="results-grid"></div>
+      </div>
+      <div id="contenedor-detalles-pack"></div>
+    </article>
+    <div id="ver-mas" class="ver-mas">
+        <a  href="#top">Volver Arriba </a>
+        <div class="material-symbols-outlined">keyboard_double_arrow_up</div>
+      </div>
+    <footer>
+      <div class="footer-content">
+        <nav>
+          <a href="../index.html">Inicio</a>
+          <a href="../alojamientos.html">Alojamientos</a>
+          <a href="../actividades.html">Actividades</a>
+          <a href="../experiencias.html">Experiencias</a>
+          <a href="../recomendaciones.html">Recomendaciones</a>
+          <a href="../contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="../../script/packsPersonalizados.js"></script>
+    <script src="../../packs-logic.js"></script>
+  </body>
+</html>

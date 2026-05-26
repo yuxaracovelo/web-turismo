@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../styles/interaccion.css" />
+    <link rel="stylesheet" href="../../styles/secciones.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/placeholder-favicon.png"
+    />
+    <title>Plantilla Experiencias</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <!-- En páginas secundarias incluye Inicio -->
+      <div class="header-content">
+        <a href="../../index.html">
+          <img
+            src="../../assets//placeholder-logo.png"
+            alt="Logo Galicia Escapadas"
+          />
+        </a>
+
+        <button class="menu-toggle" aria-label="Menu">
+          <div class="material-symbols-outlined" id="burger-menu">menu</div>
+        </button>
+
+        <nav id="main-nav">
+          <a href="../../index.html">Inicio</a>
+          <a href="../alojamientos.html">Alojamientos</a>
+          <a href="../actividades.html">Actividades</a>
+          <a href="../experiencias.html">Experiencias</a>
+          <a href="../recomendaciones.html">Recomendaciones</a>
+          <a href="../contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <div id="volver" class="volver">
+      <div class="material-symbols-outlined">arrow_back</div>
+      <a href="javascript:history.back()">Volver</a>
+    </div>
+    <!-- HERO SECTION-->
+    <section id="hero-section">
+      <div class="hero-texto">
+        <h1>Nombre de la Experiencia</h1>
+      </div>
+    </section>
+    <!-- INFO DE LA EXPERIENCIA -->
+    <article id="alojamiento-detalles">
+      <div class="alojamiento-imagen">
+        <img
+          src="../../assets//placeholder-cuadrada.png"
+          alt="imagen del alojamiento"
+        />
+      </div>
+      <div class="alojamiento-info">
+        <h4>Ciudad, Provincia</h4>
+        <div class="precio-boton-reserva">
+          <h5>Desde 0.00€</h5>
+          <a
+            href="#"
+            id="boton-reserva-externa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="boton-primario">Contratar ahora</button>
+          </a>
+        </div>
+        <p>
+          Descripción del alojamiento lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <button id="open-details" class="boton-secundario">Ver detalles</button>
+        <!-- Side panel con información extendida-->
+        <div id="side-panel" class="side-panel">
+          <div class="panel-header">
+            <h3>Información Detallada</h3>
+            <button id="close-panel" class="close-btn button">&times;</button>
+          </div>
+          <div id="panel-content" class="panel-body"></div>
+        </div>
+        <div id="panel-overlay" class="panel-overlay"></div>
+      </div>
+    </article>
+    <!-- GALERÍA DE IMAGENES -->
+    <section class="gallery-section">
+      <button class="nav-btn" onclick="moveGallery(-1)">
+        <div class="material-symbols-outlined">chevron_left</div>
+      </button>
+
+      <div id="gallery-grid" class="gallery-grid"></div>
+
+      <button class="nav-btn" onclick="moveGallery(1)">
+        <div class="material-symbols-outlined">chevron_right</div>
+      </button>
+    </section>
+
+    <div id="gallery-overlay" class="gallery-overlay">
+      <div class="close-btn" onclick="closeOverlay()">&times;</div>
+
+      <button class="nav-btn-overlay left" onclick="moveOverlay(-1)">
+        <div class="material-symbols-outlined">chevron_left</div>
+      </button>
+
+      <div class="gallery-overlay-content">
+        <img id="gallery-overlay-img" src="" alt="" />
+        <p id="gallery-overlay-caption"></p>
+      </div>
+
+      <button class="nav-btn-overlay right" onclick="moveOverlay(1)">
+        <div class="material-symbols-outlined">chevron_right</div>
+      </button>
+    </div>
+
+    <!-- MAPA -->
+    <article id="mapa-contenedor"></article>
+    <!-- RECOMENDACIONES DE LA ZONA -->
+    <article>
+      <h3>Recomendaciones en la zona</h3>
+      <div id="recomendaciones-container"></div>
+    </article>
+
+    <footer>
+      <div class="footer-content">
+        <nav>
+          <a href="../index.html">Inicio</a>
+          <a href="../alojamientos.html">Alojamientos</a>
+          <a href="../actividades.html">Actividades</a>
+          <a href="../experiencias.html">Experiencias</a>
+          <a href="../recomendaciones.html">Recomendaciones</a>
+          <a href="../contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="../../script/alojamientos.js"></script>
+    <script src="../../script/actividades.js"></script>
+    <script src="../../script/experiencias.js"></script>
+    <script src="../../script/recomendacionesZona.js"></script>
+    <script src="../../main.js"></script>
+  </body>
+</html>

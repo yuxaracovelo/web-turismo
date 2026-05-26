@@ -1,0 +1,449 @@
+/* En este archivo se definen los estilos para las secciones estáticas */
+
+/* HERO ----------------------------*/
+
+#hero-section,
+#hero-section-index,
+#hero-section-alojamientos,
+#hero-section-actividades,
+#hero-section-experiencias,
+#hero-section-experiencia-personalizada,
+#hero-section-recomendaciones,
+#hero-section-contacto {
+  background-image: url("../assets/placeholder-rectangular.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  width: 100%;
+}
+#hero-section-index {
+  background-image: url("../assets/placeholder-rectangular.png");
+}
+#hero-section-alojamientos {
+  background-image: url("../assets/placeholder-rectangular.png");
+}
+#hero-section-actividades {
+  background-image: url("../assets/placeholder-rectangular.png");
+}
+#hero-section-experiencias {
+  background-image: url("../assets/placeholder-rectangular.png");
+}
+#hero-section-experiencia-personalizada {
+  background-image: url("../assets/placeholder-rectangular.png");
+}
+#hero-section-recomendaciones {
+  background-image: url("../assets/placeholder-rectangular.png");
+}
+#hero-section-contacto {
+  background-image: url("../assets/placeholder-rectangular.png");
+}
+
+.hero-texto {
+  background-color: var(--sombra-blanco);
+  padding: 3.125rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero-texto button {
+  align-self: center;
+  width: auto;
+}
+
+/* SECCIONES ---------------------------- */
+
+article{
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+article .subtitulo {
+  color: var(--color-primario);
+}
+
+article button {
+  align-self: flex-start;
+  width: auto;
+}
+
+#seccion-sombra-index,
+#seccion-sombra {
+  background-color: var(--sombra1);
+  width: 100%;
+  margin-left: calc(-50vw + 50%);
+  max-width: none;
+  padding: 2.5rem 10vw;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#seccion-sombra-index h2 {
+  padding-bottom: 1rem;
+}
+#seccion-sombra {
+  padding: 2rem 10vw;
+}
+#seccion-sombra h3 {
+  padding-bottom: 0.5rem;
+}
+.icono-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.iconos-grid,
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: 3rem 0;
+}
+.servicios-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.texto-icono {
+  flex-direction: column;
+}
+.texto-icono h5 {
+  margin-bottom: 0.25rem;
+}
+.texto-icono p {
+  color: #000;
+}
+
+#alojamiento-detalles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.alojamiento-imagen img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.alojamiento-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.alojamiento-info h4 {
+  color: var(--color-terciario);
+}
+.alojamiento-info div {
+  color: var(--color-primario);
+  display: flex;
+}
+.precio-boton-reserva {
+  justify-content: space-between;
+}
+
+/* TARJETAS ----------------------------*/
+
+#actividades-populares,
+#recomendaciones-container,
+#como-funciona {
+  display: grid;
+  /* DESKTOP: 4 tarjetas */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.tarjeta {
+  flex: 1 1 250px;
+  padding: 0.9375rem;
+  border: 1px solid var(--color-secundario);
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tarjeta a {
+  text-decoration: none;
+  color: inherit;
+}
+.tarjeta:hover{
+  transform: scale(1.02);
+  box-shadow: 1px 1px 4px #757575;
+}
+.imagen-tarjeta {
+  width: 100%;
+  height: 15.625rem;
+  padding-bottom: 1rem;
+  object-fit: cover;
+  background-position: center;
+}
+.texto-tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.texto-tarjeta-alojamiento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+}
+.nombre-alojamiento {
+  grid-column: span 2 / span 2;
+}
+
+.precio-alojamiento {
+  grid-row-start: 2;
+  text-align: left;
+}
+
+.sitio-alojamiento {
+  grid-row-start: 2;
+  text-align: right;
+}
+.texto-tarjeta ul {
+  padding-left: 15px;
+  list-style-type: disc;
+}
+
+#como-funciona {
+  grid-template-columns: repeat(3, 1fr);
+}
+#como-funciona .tarjeta {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#como-funciona h5 {
+  color: var(--color-primario);
+}
+#como-funciona .material-symbols-outlined {
+  color: var(--color-primario);
+}
+
+/* --------------  EXPERIENCIAS PERSONALIZADAS ----------*/
+.seleccion-rapida {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+#detalles {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; 
+  gap: 1.5rem;
+  align-items: start;
+
+}
+.imagen-detalles img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.elementos-detalles{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.elementos-detalles h3 {
+  color: var(--color-primario);
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+
+.elementos-detalles p {
+  padding: 0.5rem 0;
+  margin: 0;
+  line-height: 1.4;
+  color: var(--color-terciario);
+}
+
+.elementos-detalles ul {
+  padding-left: 1.2rem;
+  margin: 1rem 0;
+  list-style-type: disc;
+}
+
+.elementos-detalles li {
+  display: list-item;
+  margin-bottom: 0.4rem;
+}
+
+.ambos-botones {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  
+}
+#grid-alojamientos-small, #grid-experiencias-small{
+  margin: 0;
+}
+#grid-alojamientos-small, #grid-experiencias-small{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+/* Fondo Azul para Alojamientos (en posiciones pares) */
+.fondo-alojamiento{
+    background-color: var(--sombra1); 
+}
+
+/* Fondo Amarillo para Experiencias (en posiciones pares) */
+.fondo-experiencia {
+    background-color: var(--sombra2); 
+}
+.full-width-row {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    display: flex;
+    justify-content: center; 
+}
+/* Colores de fondo aplicados al envoltorio */
+.wrapper-fondo-alojamiento {
+    background-color:var(--sombra1);
+}
+
+.wrapper-fondo-experiencia {
+    background-color: var(--sombra2); 
+}
+
+
+.full-width-row article {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 60px 20px; 
+    background: transparent !important; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* -------------------  MEDIA QUERIES ----------------------------*/
+
+/* TABLET: Pantallas entre 768px y 1200px */
+@media (max-width: 1200px) {
+  #actividades-populares,
+  #recomendaciones-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .iconos-grid,
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  #grid-alojamientos-small, #grid-experiencias-small{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* MÓVIL: Pantallas menores a 768px */
+@media (max-width: 768px) {
+  #hero-section {
+    min-height: 20rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    margin-left: 0;
+  }
+  .hero-texto {
+    padding: 2rem;
+    gap: 1rem;
+  }
+  article {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .tarjeta {
+    width: 100%;
+  }
+  #actividades-populares,
+  #recomendaciones-container,
+  #alojamiento-detalles, #grid-alojamientos-small, #grid-experiencias-small {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .imagen-tarjeta {
+    height: 12rem;
+  }
+  #como-funciona {
+    grid-template-columns: 1fr;
+  }
+
+  .iconos-grid,
+  .servicios-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+  #detalles {
+    display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .imagen-detalles {
+        width: 100%;
+    }
+
+    .imagen-detalles img {
+        width: 100%;
+        max-width: 500px; 
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .elementos-detalles {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementos-detalles ul {
+        padding: 0;
+        list-style-position: inside;
+        text-align: left; 
+        display: inline-block; 
+    }
+
+    .ambos-botones {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .boton-primario, .boton-secundario {
+        width: 100%; 
+        text-align: center;
+    }
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/interaccion.css" />
+    <link rel="stylesheet" href="styles/secciones.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/placeholder-favicon.png"
+    />
+    <title>Galicia Escapadas</title>
+  </head>
+  <body>
+    <!-- ENCABEZADO común a todas las páginas, con logotipo y menú de navegacion -->
+    <header>
+      <div class="header-content">
+        <a href="index.html">
+          <img src="assets/placeholder-logo.png" alt="Logo Galicia Escapadas"/>
+        </a>
+        <button class="menu-toggle" aria-label="Menu">
+          <div class="material-symbols-outlined" id="burger-menu">menu</div>
+        </button>
+
+        <nav id="main-nav">
+          <a  href="html/alojamientos.html">Alojamientos</a>
+          <a href="html/actividades.html">Actividades</a>
+          <a href="html/experiencias.html">Experiencias</a>
+          <a href="html/recomendaciones.html">Recomendaciones</a>
+          <a href="html/contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <!-- HERO SECTION con imagen de fondo en CSS-->
+    <section id="hero-section-index" >
+      <div class="hero-texto">
+        <h1 >Galicia es lo que necesitas para salir de la rutina</h1>
+        <h4 class="subtitulo">Reserva ahora tus próximas vacaciones</h4>
+        <a  href="html/alojamientos.html">
+        <button class="boton-primario">Ver Alojamientos</button>
+      </a>
+      </div>
+    </section>
+    <!-- SECCIONES de contenido, cada una con un titulo h2 y subtítulo h5(opcional) -->
+    <article class="article">
+      <h2 >Actividades populares</h2>
+      <h5 class="subtitulo">Descubre los eventos más populares</h5>
+      <div id="actividades-populares">
+        <div class="tarjeta">
+          <img
+            class="imagen-tarjeta"
+            src="assets/placeholder-cuadrada.png"
+            alt="imagen provisional"
+          />
+          <div class="texto-tarjeta">
+            <h5 >Nombre de la Actividad</h5>
+            <p >Lugar, Provincia.</p>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img
+            class="imagen-tarjeta"
+            src="assets/placeholder-cuadrada.png"
+            alt="imagen provisional"
+          />
+          <div class="texto-tarjeta">
+            <h5 >Nombre de la Actividad</h5>
+            <p >Lugar, Provincia.</p>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img
+            class="imagen-tarjeta"
+            src="assets/placeholder-cuadrada.png"
+            alt="imagen provisional"
+          />
+          <div class="texto-tarjeta">
+            <h5 >Nombre de la Actividad</h5>
+            <p >Lugar, Provincia.</p>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img
+            class="imagen-tarjeta"
+            src="assets/placeholder-cuadrada.png"
+            alt="imagen provisional"
+          />
+          <div class="texto-tarjeta">
+            <h5 >Nombre de la Actividad</h5>
+            <p >Lugar, Provincia.</p>
+          </div>
+        </div>
+      </div>
+      <div id="ver-mas" class="ver-mas">
+        <a  href="html/actividades.html">Ver más actividades </a>
+        <div class="material-symbols-outlined"> arrow_forward </div>
+      </div>
+    </article>
+    <article id="seccion-sombra-index">
+      <div>
+      <h2 >¿Quieres crear tu propia experiencia?</h2>
+      <h5 class="subtitulo">
+        Mira nuestras sugerencias y elige la que mejor se adapte a ti.
+      </h5>
+    </div>
+      <a  href="html/experiencia-personalizada.html"><button class="boton-primario">
+        Crear experiencia personalizada</a>
+      </button></a>
+    </article>
+    <article >
+      <!-- Falta que cada uno de estos div de icono-info tenga un enlace a una página donde solo se muestren las experiencias con el tag correspondiente -->
+      <h2 >Una experiencia para cada ocasión</h2>
+      <h5 class="subtitulo">¿De que te apetece disfrutar?</h5>
+      <div class="iconos-grid">
+        <div class="icono-info">
+          <div class="material-symbols-outlined"> spa </div>
+          <div class="texto-icono">
+            <h5 >Relajación</h5>
+            <p >Tranquilidad, paz y calma.</p>
+          </div>
+        </div>
+        <div class="icono-info">
+          <div class="material-symbols-outlined"> favorite </div>
+          <div class="texto-icono">
+            <h5 >Romántica</h5>
+            <p >Disfruta de una escapada en pareja.</p>
+          </div>
+        </div>
+        <div class="icono-info">
+          <div class="material-symbols-outlined"> home </div>
+          <div class="texto-icono">
+            <h5 >Familiar</h5>
+            <p >Experiencias para toda la familia.</p>
+          </div>
+        </div>
+        <div class="icono-info">
+          <div class="material-symbols-outlined"> skillet </div>
+          <div class="texto-icono">
+            <h5 >Gastronómica</h5>
+            <p >Los mejores platos de la región.</p>
+          </div>
+        </div>
+        <div class="icono-info">
+          <div class="material-symbols-outlined"> explore </div>
+          <div class="texto-icono">
+            <h5 >Aventura</h5>
+            <p >Todo para los amantes de la adrenalina.</p>
+          </div>
+        </div>
+        <div class="icono-info">
+          <div class="material-symbols-outlined"> star </div>
+          <div class="texto-icono">
+            <h5 >Personalizada</h5>
+            <p >Una experiencia única para ti.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer >
+      <div class="footer-content">
+        <nav>
+          <a  href="html/alojamientos.html">Alojamientos</a>
+          <a  href="html/actividades.html">Actividades</a>
+          <a  href="html/experiencias.html">Experiencias</a>
+          <a  href="html/recomendaciones.html">Recomendaciones</a>
+          <a  href="html/contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </footer>
+  
+    <script src="main.js"></script>
+  </body>
+</html>

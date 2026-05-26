@@ -1,0 +1,379 @@
+/* En este archivo se definen los estilos globales para toda la página*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* COLORES WEB ----------------------------*/
+
+:root {
+  --color-primario: #0087d0;
+  --color-secundario: #5ec7ff;
+  --color-terciario: #757575;
+  --color-acento: #efc300;
+  --sombra1: #5ec7ff62;
+  --sombra2: #efc30041;
+  --sombra-blanco: #ffffffcc;
+}
+
+/* ICONOS ----------------------------*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 700,
+    "GRAD" 200,
+    "opsz" 48;
+}
+#burger-menu {
+  color: #ffffff;
+}
+
+/* TEXTOS ----------------------------*/
+
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.introduccion {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.subtitulo {
+  color: #757575;
+}
+
+/* BOTONES ----------------------------*/
+
+button, .boton-primario, .boton-secundario{
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 4px #757575;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+.boton-primario {
+  background-color: var(--color-acento);
+  color: #000;
+}
+.boton-primario a{
+  color: #000;
+  text-decoration: none;
+}
+.boton-secundario {
+  border: 1px solid var(--color-primario);
+  background-color: #ffffff77;
+  color: var(--color-primario);
+}
+button a {
+  color: #000;
+  text-decoration: none;
+}
+button a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ENLACES Y HR----------------------------*/
+
+a {
+  color: var(--color-primario);
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+hr{
+  border: none; 
+  height: 2px; 
+  background-color: var(--color-acento); 
+}
+
+/* HEADER ----------------------------*/
+header {
+  background-color: var(--color-primario);
+  width: 100%;
+}
+.header-content {
+  color: white;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+header img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+header nav {
+  display: flex;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+header nav a:hover {
+  background-color: var(--sombra1);
+  text-decoration: none;
+  color: var(--color-acento);
+}
+
+/* DESKTOP: Ocultar botón menu burger */
+#menu-toggle, .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER ----------------------------*/
+footer {
+  background-color: var(--color-primario);
+  width: 100%;
+}
+.footer-content {
+  color: white;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+footer nav {
+  display: flex;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+footer nav a:hover {
+  background-color: var(--sombra1);
+  text-decoration: none;
+  color: var(--color-acento);
+}
+
+/* VER MÁS Y VOLVER ----------------------------*/
+
+#ver-mas, .ver-mas {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.ver-mas a {
+  text-decoration: none;
+  color: var(--color-primario);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ver-mas div {
+  color: var(--color-primario);
+  font-size: 1rem;
+}
+#volver, .volver {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  background-color: var(--sombra1);
+}
+
+.volver a {
+  text-decoration: none;
+  color: var(--color-primario);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.volver div {
+  color: var(--color-primario);
+  font-size: 1rem;
+}
+
+/* -------------------  MEDIA QUERIES ----------------------------*/
+
+/* TABLET: Pantallas entre 768px y 1200px */
+@media (max-width: 1200px) {
+  #actividades-populares {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .iconos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
+}
+
+/* MÓVIL: Pantallas menores a 768px */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .introduccion {
+    font-size: 0.8rem;
+  }
+
+  header img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  header nav,
+  footer nav {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer nav a {
+    font-size: 0.8rem;
+  }
+
+  .header-content,
+  .footer-content {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    width: 100%;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    z-index: 2001;
+  }
+
+  #main-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-primario);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1000;
+  }
+
+  #main-nav.active {
+    display: flex;
+  }
+
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+  #hero-section {
+    min-height: 20rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    margin-left: 0;
+  }
+  .hero-texto {
+    padding: 2rem;
+    gap: 1rem;
+  }
+  article {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .tarjeta {
+    width: 100%;
+  }
+  #actividades-populares {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .imagen-tarjeta {
+    height: 12rem;
+  }
+
+  .iconos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .icono-info {
+    flex-direction: row;
+    text-align: left;
+  }
+}

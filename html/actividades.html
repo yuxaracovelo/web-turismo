@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/interaccion.css" />
+    <link rel="stylesheet" href="../styles/secciones.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/placeholder-favicon.png"
+    />
+    <title>Actividades - Galicia Escapadas</title>
+  </head>
+  <body>
+    <!-- En páginas secundarias incluye Inicio -->
+    <header class="header">
+      <div class="header-content">
+        <a  href="../index.html">
+          <img src="../assets/placeholder-logo.png" alt="Logo Galicia Escapadas"/>
+        </a>
+        <button class="menu-toggle" aria-label="Menu">
+          <div class="material-symbols-outlined" id="burger-menu">menu</div>
+        </button>
+
+        <nav id="main-nav" >
+          <a  href="../index.html">Inicio</a>
+          <a  href="alojamientos.html">Alojamientos</a>
+          <a  href="actividades.html">Actividades</a>
+          <a  href="experiencias.html">Experiencias</a>
+          <a  href="recomendaciones.html">Recomendaciones</a>
+          <a  href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section id="hero-section-actividades" >
+      <div class="hero-texto">
+        <h1 >¿Qué te apetece hacer?</h1>
+        
+         <!-- INICIO FORMULARIO -->
+        <div class="form-alojamientos">
+        <div class="booking-form-container">
+            <form id="reservation-form">
+              
+              <div class="form-group">
+                <label><h3 >Provincia</h3></label>
+                <select id="province">
+                  <option value="">¿A dónde quieres ir</option>
+                  <option value="A Coruña">A Coruña</option>
+                  <option value="Lugo">Lugo</option>
+                  <option value="Ourense">Ourense</option>
+                  <option value="Pontevedra">Pontevedra</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label><h3 >Tipo</h3></label>
+                <select id="trip-type">
+                  <option value="">¿Qué te apetece?</option>
+                  <option value="Relajación">Relajación</option>
+                  <option value="Gastronómico">Gastronómico</option>
+                  <option value="Romántico">Romántico</option>
+                  <option value="Aventura">Aventura</option>
+                  <option value="Familiar">Familiar</option>
+                  <option value="Playa">Playa</option>
+                  <option value="Montaña">Montaña</option>
+                  <option value="Urbano">Urbano</option>
+                  <option value="Tradicional">Tradicional</option>
+                </select>
+              </div>
+            </div>
+            
+          <div class="calendar-container">
+          <div class="calendar-header">
+            <button type="button" id="prev-month" class="button">
+              <div class="material-symbols-outlined">chevron_left</div>
+            </button>
+            <h3  id="month-year"></h3>
+            <button type="button" id="next-month" class="button">
+              <div class="material-symbols-outlined">chevron_right</div>
+            </button>
+          </div>
+
+          <div class="calendar-grid weekdays">
+            <div>L</div>
+            <div>M</div>
+            <div>X</div>
+            <div>J</div>
+            <div>V</div>
+            <div>S</div>
+            <div>D</div>
+          </div>
+
+          <div class="calendar-grid days" id="calendar-days"></div>
+          <div class="botones-formulario">
+            <button class="boton-secundario" type="reset">
+                Borrar filtros
+              </button>
+            <button class="boton-primario" type="submit" id="submit-booking">
+                Ver Actividades
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+        <!-- FIN FORMULARIO -->
+    </section>
+    <div id="results-container" class="results-grid"></div>
+
+    <footer >
+      <div class="footer-content">
+        <nav>
+          <a  href="../index.html">Inicio</a>
+          <a  href="alojamientos.html">Alojamientos</a>
+          <a  href="actividades.html">Actividades</a>
+          <a  href="experiencias.html">Experiencias</a>
+          <a  href="recomendaciones.html">Recomendaciones</a>
+          <a  href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </footer>
+    
+<script src="../script/alojamientos.js"></script>
+    <script src="../script/actividades.js"></script>
+    <script src="../script/recomendacionesZona.js"></script>
+    <script src="../main.js"></script>
+
+  </body>
+</html>
