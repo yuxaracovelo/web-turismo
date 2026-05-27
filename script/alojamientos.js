@@ -13,7 +13,7 @@ const hotels = [
   //   // Para la tarjeta
   //   image: "../../assets/placeholder-cuadrada.png",
   //   // Para la hero section
-  //   heroImage: "../assets/imagen-ejemplo4.jpg",
+  //   heroImage: "../../assets/imagen-ejemplo4.jpg",
   //   tags: ["", "", ""],
   //   link: "alojamientos/plantilla-alojamiento.html",
   //   //Mapa de Google Maps
@@ -47,7 +47,7 @@ const hotels = [
     // Para la tarjeta
     image: "../../assets/placeholder-cuadrada.png",
     // Para la hero section
-    heroImage: "../assets/imagen-ejemplo4.jpg",
+    heroImage: "../../assets/imagen-ejemplo4.jpg",
     tags: ["Gastronómico", "Urbano", "Familiar"],
     link: "alojamientos/plantilla-alojamiento.html",
     // Mapa de Google Maps
@@ -100,7 +100,7 @@ const hotels = [
     // Para la tarjeta
     image: "../../assets/imagen-ejemplo2.jpg",
     // Para la hero section
-    heroImage: "../assets/imagen-ejemplo2.jpg",
+    heroImage: "../../assets/imagen-ejemplo2.jpg",
     tags: ["Montaña", "Tradicional", "Familiar"],
     link: "alojamientos/plantilla-alojamiento.html",
     // Mapa de Google Maps
@@ -149,7 +149,7 @@ const hotels = [
     // Para la tarjeta
     image: "../../assets/placeholder-cuadrada.png",
     // Para la hero section
-    heroImage: "../assets/imagen-ejemplo4.jpg",
+    heroImage: "../../assets/imagen-ejemplo4.jpg",
     tags: ["Urbano", "Relajante", "Romántico"],
     link: "alojamientos/plantilla-alojamiento.html",
     //Mapa de Google Maps
@@ -206,7 +206,7 @@ const hotels = [
     // Para la tarjeta
     image: "../../assets/placeholder-cuadrada.png",
     // Para la hero section
-    heroImage: "../assets/imagen-ejemplo4.jpg",
+    heroImage: "../../assets/imagen-ejemplo4.jpg",
     tags: ["Urbano", "Relajante", "Romántico"],
     link: "alojamientos/plantilla-alojamiento.html",
     //Mapa de Google Maps

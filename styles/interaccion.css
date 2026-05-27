@@ -71,6 +71,9 @@ label {
   color: var(--color-terciario);
   align-self: flex-start;
 }
+label h3{
+  color: var(--color-primario);
+}
 
 input,
 select {
